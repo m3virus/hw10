@@ -1,0 +1,21 @@
+﻿@page "{id:int}"
+@model Store.Pages.Games.DeleteModel
+@{
+    ViewData["Title"] = "Delete Product";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.game != null)
+{
+    <p>Are you sure you want to delete the product with ID @Model.game.ID?</p>
+
+    <form method="post">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-page="/Products/Index" class="btn btn-secondary">Cancel</a>
+    </form>
+}
+else
+{
+    <p>Product not found</p>
+}
