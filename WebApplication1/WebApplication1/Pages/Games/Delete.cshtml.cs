@@ -30,7 +30,7 @@ namespace Store.Pages.Games
 
         public IActionResult OnPost(int id)
         {
-            _gameRepository.DeleteGameById(id);
+           // _gameRepository.DeleteGameById(id);
             return RedirectToPage("/Games/Index");
         }
     }

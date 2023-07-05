@@ -1,10 +1,12 @@
-﻿@page
+﻿@page  "/games/detail/{id}"
 @model Store.Pages.Games.DetailModel
 @{
     ViewData["Title"] = "Game Detail";
 }
 
-<h1>Product Detail</h1>
+<h1>Game Detail</h1>
+
+<partial name="_Notification" model="@TempData["NotificationMessage"]" />
 
 <div>
     <h2>@Model.Games.Name</h2>

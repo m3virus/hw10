@@ -11,7 +11,6 @@ C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\St
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.AssemblyInfo.cs
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.RazorAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\Store.RazorAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\hw10\WebApplication1\WebApplication1\obj\Debug\net6.0\staticwebassets\msbuild.Store.Microsoft.AspNetCore.StaticWebAssets.props

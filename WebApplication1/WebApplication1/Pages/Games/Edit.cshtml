@@ -1,4 +1,64 @@
-﻿@page
+﻿@page "/games/edit/{id}"
 @model Store.Pages.Games.EditModel
 @{
+    ViewData["Title"] = "ویرایش کالا";
+}
+
+<h2>ویرایش کالا</h2>
+
+@if (Model.Game == null)
+{
+    <p>کالایی با این شناسه یافت نشد.</p>
+}
+else
+{
+    <form method="post">
+        <input type="hidden" asp-for="Game.ID" />
+
+        <div class="form-group">
+            <label asp-for="Game.Name">Name</label>
+            <input class="form-control" asp-for="Game.Name" />
+            <span asp-validation-for="Game.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Game.Barcode">Barcode</label>
+            <input class="form-control" asp-for="Game.Barcode" />
+            <span asp-validation-for="Game.Barcode" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Game.Price">Price</label>
+            <input class="form-control" asp-for="Game.Price" />
+            <span asp-validation-for="Game.Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Game.Description">Description</label>
+            <textarea class="form-control" asp-for="Game.Description"></textarea>
+            <span asp-validation-for="Game.Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="NewPhoto">New Photo</label>
+            <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" />
+            <span asp-validation-for="NewPhoto" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Currnet Photo</label>
+            <img src="@Model.Game.Photo" class="img-thumbnail" style="max-width: 200px;" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">save</button>
+        <a href="/products" class="btn btn-secondary">cancel</a>
+    </form>
+}
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var output = document.getElementById('preview');
+            output.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
 }

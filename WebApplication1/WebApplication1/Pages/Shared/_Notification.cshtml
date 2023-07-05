@@ -1,0 +1,15 @@
+﻿@model string
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <div id="notification" class="notification">
+        <p>@Model</p>
+        <button id="closeNotification" class="closeNotification">Close</button>
+    </div>
+
+    <script>
+        document.getElementById("closeNotification").addEventListener("click", function () {
+            document.getElementById("notification").style.display = "none";
+        });
+    </script>
+}
