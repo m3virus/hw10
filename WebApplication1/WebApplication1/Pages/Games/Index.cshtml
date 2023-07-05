@@ -1,0 +1,38 @@
+﻿@page   
+@model Store.Pages.Games.IndexModel
+
+@{
+    ViewData["Title"] = "product list";
+
+   
+}
+<h1>the products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Barcode</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (var product in Model.Games )
+        {
+            <tr>
+                <td><img src="@product.Photo" alt="/address"></td>
+                <td>@product.Name</td>
+                <td>@product.Barcode</td>
+                <td>@product.Price</td>
+                <td>
+                    <a href="/Products/Details/@product.ID">details</a> 
+                    <a href="/Products/Edit/@product.ID">edit</a> 
+                    <a href="/Products/Delete/@product.ID">delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

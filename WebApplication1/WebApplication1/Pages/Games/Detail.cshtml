@@ -1,0 +1,15 @@
+﻿@page
+@model Store.Pages.Games.DetailModel
+@{
+    ViewData["Title"] = "Game Detail";
+}
+
+<h1>Product Detail</h1>
+
+<div>
+    <h2>@Model.Games.Name</h2>
+    <p>Barcode: @Model.Games.Barcode</p>
+    <p>Price: @Model.Games.Price</p>
+    <p>Description: @Model.Games.Description</p>
+    
+</div>

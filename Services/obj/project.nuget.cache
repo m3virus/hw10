@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "snhnVo5twW+d+b9sDiuaZH2L6eSsbfKYnyhGnDRJzX4kvwado9OR/N8+roF34bmDmopkN4V0w+0B2rguL8W1Ww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\hw10\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
